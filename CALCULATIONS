@@ -1,0 +1,265 @@
+Calculations and Theory
+Distance Calculation
+Using the Haversine formula to calculate the distance between two points on the Earth's surface:
+
+𝑑
+=
+2
+𝑟
+⋅
+arcsin
+⁡
+(
+sin
+⁡
+2
+(
+Δ
+𝜙
+2
+)
++
+cos
+⁡
+(
+𝜙
+1
+)
+⋅
+cos
+⁡
+(
+𝜙
+2
+)
+⋅
+sin
+⁡
+2
+(
+Δ
+𝜆
+2
+)
+)
+d=2r⋅arcsin( 
+sin 
+2
+ ( 
+2
+Δϕ
+​
+ )+cos(ϕ 
+1
+​
+ )⋅cos(ϕ 
+2
+​
+ )⋅sin 
+2
+ ( 
+2
+Δλ
+​
+ )
+​
+ )
+
+Where:
+
+𝜙
+1
+,
+𝜙
+2
+ϕ 
+1
+​
+ ,ϕ 
+2
+​
+  are the latitudes of the two points in radians.
+Δ
+𝜙
+Δϕ is the difference between the latitudes.
+Δ
+𝜆
+Δλ is the difference between the longitudes.
+𝑟
+r is the Earth's radius (mean radius = 6,371 km).
+Example Calculation
+For latitude and longitude coordinates:
+
+Current location: 
+𝜙
+1
+=
+37.7749
+ϕ 
+1
+​
+ =37.7749, 
+𝜆
+1
+=
+−
+122.4194
+λ 
+1
+​
+ =−122.4194
+Destination: 
+𝜙
+2
+=
+37.7740
+ϕ 
+2
+​
+ =37.7740, 
+𝜆
+2
+=
+−
+122.4190
+λ 
+2
+​
+ =−122.4190
+Convert the latitude and longitude values from degrees to radians:
+𝜙
+1
+=
+0.659
+ radians
+,
+𝜙
+2
+=
+0.658
+ radians
+ϕ 
+1
+​
+ =0.659 radians,ϕ 
+2
+​
+ =0.658 radians
+Δ
+𝜙
+=
+𝜙
+2
+−
+𝜙
+1
+=
+−
+0.001
+ radians
+Δϕ=ϕ 
+2
+​
+ −ϕ 
+1
+​
+ =−0.001 radians
+Δ
+𝜆
+=
+𝜆
+2
+−
+𝜆
+1
+=
+0.0001
+ radians
+Δλ=λ 
+2
+​
+ −λ 
+1
+​
+ =0.0001 radians
+
+Apply the Haversine formula:
+𝑎
+=
+sin
+⁡
+2
+(
+−
+0.001
+2
+)
++
+cos
+⁡
+(
+0.659
+)
+⋅
+cos
+⁡
+(
+0.658
+)
+⋅
+sin
+⁡
+2
+(
+0.0001
+2
+)
+a=sin 
+2
+ ( 
+2
+−0.001
+​
+ )+cos(0.659)⋅cos(0.658)⋅sin 
+2
+ ( 
+2
+0.0001
+​
+ )
+𝑎
+≈
+0.00000025
+a≈0.00000025
+𝑐
+=
+2
+⋅
+\atan
+2
+(
+𝑎
+,
+1
+−
+𝑎
+)
+≈
+0.001
+c=2⋅\atan2( 
+a
+​
+ , 
+1−a
+​
+ )≈0.001
+𝑑
+=
+6371
+⋅
+0.001
+≈
+6.37
+ km
+d=6371⋅0.001≈6.37 km
+
