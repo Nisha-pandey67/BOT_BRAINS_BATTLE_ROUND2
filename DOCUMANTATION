@@ -51,3 +51,10 @@ Continuously check for obstacles using ultrasonic sensors.
 Adjust the path if an obstacle is detected.
 Use gyroscope to maintain direction and balance.
 Upon reaching the destination, release the parcel.
+
+## REFERENCES
+Arduino Documentation: https://www.arduino.cc/reference/en/
+GPS Module Datasheet: https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_(GPS.G6-HW-09005).pdf
+MPU-6050 Datasheet: https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf
+Ultrasonic Sensor (HC-SR04) Datasheet: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+Haversine Formula Explanation: https://en.wikipedia.org/wiki/Haversine_formula
