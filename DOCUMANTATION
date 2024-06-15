@@ -1,0 +1,53 @@
+
+PARCEL DELIVERY ROBOT DESIGN AND IMPLEMENTATION
+
+1. INTRODUCTIONS
+
+The goal of this project is to design, build, and program a robot capable of delivering parcels to consumers' doorsteps. The robot must navigate through traffic, handle turns, and avoid obstacles. This document outlines the ideation, calculations, circuit design, programming, and documentation needed to achieve this task.
+
+2. IDEATION AND PLANNING
+
+Key Components and Functions
+Navigation System:
+GPS Module: To provide location data.
+Compass/Gyroscope: For orientation and heading information.
+Obstacle Detection:
+Ultrasonic Sensors: For detecting obstacles in the robot's path.
+Motor Control:
+DC Motors: For driving the robot.
+Motor Drivers: To control the motors.
+Parcel Handling Mechanism:
+Servo Motor: To release the parcel.
+Communication:
+Wi-Fi Module: To receive destination coordinates and send status updates.
+
+3. CIRCUIT DIAGRAMS
+
+Components:
+
+Microcontroller: Arduino Uno
+GPS Module: Ublox NEO-6M
+Compass/Gyroscope: MPU-6050
+Ultrasonic Sensors: HC-SR04
+DC Motors: Generic geared DC motors
+Motor Drivers: L298N
+Servo Motor: SG90
+Wi-Fi Module: ESP8266
+
+
+4.SOFTWARE DESIGN
+High-Level Steps
+Initialization: Initialize all sensors and communication modules.
+Receive Destination Coordinates: Obtain the destination coordinates via Wi-Fi.
+Navigation: Use GPS and compass to navigate to the destination.
+Obstacle Avoidance: Continuously check for obstacles and adjust the path accordingly.
+Parcel Delivery: Release the parcel upon reaching the destination.
+
+## PSEUDOCODE
+Initialize sensors and communication modules.
+Get the destination coordinates from the user.
+Use GPS to navigate towards the destination.
+Continuously check for obstacles using ultrasonic sensors.
+Adjust the path if an obstacle is detected.
+Use gyroscope to maintain direction and balance.
+Upon reaching the destination, release the parcel.
